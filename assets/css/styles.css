@@ -1,0 +1,133 @@
+/* Reset gaya default */
+body, h1, h2, h3, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+/* Gaya umum untuk seluruh aplikasi */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fa;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    background-color: #4a90e2;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    border-bottom: 4px solid #357abd;
+}
+
+/* Tombol */
+.btn {
+    display: inline-block;
+    padding: 10px 15px;
+    font-size: 14px;
+    color: #fff;
+    background-color: #4a90e2;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #357abd;
+}
+
+/* Kotak pesan */
+.chat-box {
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    margin-top: 20px;
+    height: 500px;
+    overflow-y: scroll;
+}
+
+.chat-box .message {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.chat-box .message .avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #357abd;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.chat-box .message .content {
+    background: #f4f7fa;
+    padding: 10px 15px;
+    border-radius: 5px;
+    max-width: 70%;
+}
+
+/* Input pesan */
+.message-input {
+    display: flex;
+    margin-top: 10px;
+}
+
+.message-input textarea {
+    flex-grow: 1;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    resize: none;
+}
+
+.message-input .send-btn {
+    margin-left: 10px;
+}
+
+/* Notifikasi */
+.notification {
+    background-color: #e8f4fc;
+    color: #4a90e2;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+/* Status Online/Offline */
+.status {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.status.online {
+    background-color: #4caf50;
+}
+
+.status.offline {
+    background-color: #f44336;
+}
